@@ -1,0 +1,27 @@
+$color1: #06283D;
+$color2: #1363DF;
+$color3: #47B5FF;
+$color4: #DFF6FF;
+$color5: #ffff;
+$color6: #ffff;
+.navbar{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding-right: 8%;
+    :hover{
+        color: $color6 ;
+    }
+}
+
+nav{
+    a{
+        color: white;
+    }
+}
+.navbar {
+    overflow-x: hidden;
+  }
+  

@@ -1,0 +1,37 @@
+$color1: #06283D;
+$color2: #1363DF;
+$color3: #47B5FF;
+$color4: #DFF6FF;
+$color5: #ffff;
+$color6: #ffff;
+span{
+
+    font-style: normal;
+    font-size: 15px;
+
+}
+.card{
+    border: 1px solid $color2;
+
+}
+img{
+    width: 200px;
+    height: auto;
+}
+.btn{
+    margin: 10px;
+    span{
+        padding-left: 4px;
+        
+    }
+    border: 0.01px solid $color2;
+    &:hover{
+        background-color: $color2;
+        color: $color4;
+    }
+
+}
+
+.card-container {
+    margin: 20px; /* Ajusta este valor según tus necesidades */
+  }

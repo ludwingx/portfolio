@@ -1,0 +1,32 @@
+
+<div class="content p-3" id="skills">
+    <br><br><br><br><br><br>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card-container" *ngFor="let card of cards">
+                    <div class="card" style="width:18rem">
+                        <img [src]="card.imageUrl" class="card-img-top mx-auto" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{card.title}}</h5>
+                          <p class="card-text">{{ card.description }}</p>
+                          <div class="d-flex justify-content-center">
+                                <button class="btn btn-eyes">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>{{txteyebutton}}</span>
+                                </button>
+                              <button class="btn btn-github">
+                                <i class="fa-brands fa-github"></i>
+                                <span>{{txtgithubbutton}}</span>
+                              </button>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,249 @@
+
+.skill-icon {
+
+    display: inline-block;
+    font-size: 40px; /* Tamaño original del icono */
+    color: #7e7e7e; /* Color original del icono */
+   
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    flex-direction: column; /* Coloca el texto debajo del icono */
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves para el hover */
+    .fa-brands {
+      transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves para el hover */
+    }
+}
+.tech-name {
+    padding-top: 5px;
+    font-size: 14px; /* Tamaño del nombre de la tecnología */
+    font-family: 'Roboto', sans-serif; /* Utiliza la fuente 'Roboto' */
+
+  }
+.tech-name.img{
+    margin-top: -10px;
+}
+.fa-html5{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: orangered ;
+        transform: scale(1.5);
+    }
+}
+.fa-css3-alt{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: blue ;
+        transform: scale(1.5);
+    }
+}
+.fa-sass{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: pink ;
+        transform: scale(1.5);
+    }
+}
+.fa-js{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: yellow ;
+        transform: scale(1.5);
+    }
+}
+.fa-ts{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: cornflowerblue ;
+        transform: scale(1.5);
+    }
+}
+.imgLogo{
+    margin-top: -12px;
+    width: 36px; /* Tamaño fijo para la imagen */
+    height: 36px; /* Tamaño fijo para la imagen */
+    position: relative; /* Asegura que la imagen esté por encima del fondo */
+    z-index: 1; /* Asegura que la imagen esté por encima del fondo */
+    &.figma{
+        width: 22px;
+        height: auto;
+    }
+    &.office{
+        width: 44px;
+        height: auto;
+    }
+}
+
+
+.fa-ts {
+    font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+    transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+    filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+
+    &:hover{
+    filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+    transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+    }
+}
+.fa-angular{
+
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: red ;
+        transform: scale(1.5);
+    }
+}
+.fa-bootstrap{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: rebeccapurple;
+        transform: scale(1.5);
+    }
+}
+.fa-py{
+    filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        filter: grayscale(0%); /* agrega el filtro de blanco y negro */
+        .pyText{
+            color:  #4584b6;
+        }
+        .tonText{
+            color:  #Ffde57;
+        }
+        transform: scale(1.5);
+    }
+}
+.fa-php{
+    
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: #474A8A;
+        transform: scale(1.5);
+    }
+}
+.fa-github{
+
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: black;
+        transform: scale(1.5);
+    }
+}
+.fa-git-alt{
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        color: #F1502F;
+        transform: scale(1.5);
+    }
+}
+.fa-mysql{
+    filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+        filter: grayscale(0%); /* agrega el filtro de blanco y negro */
+        .myText{
+            color:  #00758f;
+        }
+        .sqlText{
+            color:  #f29111;
+        }
+        transform: scale(1.5);
+    }
+}
+.fa-notion{
+    filter: grayscale(100%); /* Elimina el filtro de blanco y negro al pasar el mouse por encima */
+    font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+    transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+    &:hover{
+
+        color: black;
+        transform: scale(1.5);
+        .imgLogo {
+            filter: grayscale(0%); /* Elimina el filtro de blanco y negro al pasar el mouse por encima */
+          }
+          transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima */
+        }
+    }
+    .fa-photoshop{
+        font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+        transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+        filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    
+        &:hover{
+        color:#001E36 ;
+        filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+        transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+        }
+    }
+    .fa-ilustrator{
+        font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+        transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+        filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    
+        &:hover{
+        color:rgb(54, 13, 0) ;
+        filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+        transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+        }
+    }
+    .fa-afterEffects{
+        font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+        transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+        filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    
+        &:hover{
+        color: darkblue;
+        filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+        transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+        }
+    }
+    .fa-figma-alt{
+        font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+        transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+        filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    
+        &:hover{
+        color: skyblue;
+        filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+        transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+        }
+    }
+
+    .fa-office{
+        font-style: normal !important; /* Asegura que el estilo sea normal, no cursiva */
+        transition: transform 0.3s, filter 0.3s, width 0.3s, height 0.3s; /* Agrega transiciones suaves */
+        filter: grayscale(100%); /* agrega el filtro de blanco y negro */
+    
+        &:hover{
+        color: orangered;
+        filter: grayscale(0%); /* Elimina el filtro para que la imagen recupere su color original al pasar el mouse por encima */
+        transform: scale(1.5); /* Cambia la escala al pasar el mouse por encima*/
+        }
+    }
+    .fa-npm{
+    
+        transition: transform 0.3s, color 0.3s; /* Agrega transiciones suaves */
+        &:hover{
+            color: crimson;
+            transform: scale(1.5);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
