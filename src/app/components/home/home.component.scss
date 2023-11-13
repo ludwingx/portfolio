@@ -4,41 +4,17 @@
         font-size: 65px;
     }
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
 .buttons{
     gap: 12px;
 }
-.photoProfile{
-    padding-bottom: 15px;
-}
-  /* Estilos para pantallas más grandes, por ejemplo, escritorio */
-  @media screen and (min-width: 768px) {
-    #home {
-
-      width: 100%;
-    }
-
-  }
-
-  .btn-circle {
-    border-radius: 50%;
-    margin: 3%;
-  }
-  
-  .fa-2x {
-    font-size: 35px; /* Tamaño de ícono 40x40 */
-  }
-  .section {
-    height: 100vh; /* La sección ocupa el 100% de la altura de la pantalla */
-    
-  }
 .socialm{
-  padding-top: 50px;
+  padding-top: 70px;
 }
-#home{
-  padding-top: 150px !important;
 
+.section {
+  height: 100vh; /* La sección ocupa el 100% de la altura de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }

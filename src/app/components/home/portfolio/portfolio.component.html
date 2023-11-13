@@ -1,13 +1,13 @@
 
-<div class="content p-3" id="skills">
-    <br><br><br><br><br><br>
-    <div class="row">
-        <div class="col d-flex justify-content-center">
+<div class="content p-3 section" id="portfolio" >
+    <br><br><br>
+    <div class="row" >
+        <div class="col d-flex justify-content-center" >
             <h2>Portfolio</h2>
         </div>
         <div class="row">
-            <div class="col-sm d-flex justify-content-center">
-                <div class="card-container" *ngFor="let card of cards">
+            <div class="col d-flex justify-content-center" *ngFor="let card of cards" >
+                <div class="card-container" >
                     <div class="card" style="width:18rem">
                         <img [src]="card.imageUrl" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
@@ -30,3 +30,4 @@
         </div>
     </div>
 </div>
+

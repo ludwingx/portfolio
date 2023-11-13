@@ -22,5 +22,6 @@ export class PortfolioComponent {
       description:'Aplicación Movil Web desarrollada con Ionic, Angular, PHP y MySQL para el Centro de Educación Ambiental del Gobierno'+ 
       ' Autónomo Departamental de Santa Cruz',
     }
+
   ]
 }

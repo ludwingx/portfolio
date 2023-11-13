@@ -1,13 +1,49 @@
-<div class="content p-3">
-    <br><br>
-    <h2>Contactamé</h2>
-    <div class="contact ">
-        <p>
-            <i class="fa-solid fa-envelope"></i>Email
-            
-        </p>
-        <p><i class="fa-brands fa-linkedin"></i>Linkedin</p>
-        <p><i class="fa-brands fa-whatsapp"></i>Wpp</p>
+<div class="content p-3" id="contact">
+    <h2 class="text-center">Contacto</h2>
+    <div class="row justify-content-center">
+        <div class="col d-flex justify-content-center">
+            <div class="card bg-danger">
+                <div class="card-body">
+                    <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre Completo*</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Mensaje*</label>
+                        <textarea class="form-control" id="exampleFormControlInput1" style="height: 125px;" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary d-grid mx-auto">Enviar mensaje</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="row  text-start">
+        <h4>Contactamé</h4>
+        
+        <div class="col-sm ">
+            <p >
+                <i class="fa-solid fa-envelope"></i>
+                <span> Email: <a  href="">{{ currentEmailText }}</a></span>
+            </p>
+            <p><i class="fa-brands fa-linkedin"></i>
+                <span> LinkedIn: <a href="https://www.linkedin.com/in/ludwingarmijosaavedra/">in/ludwingarmijosaavedra</a></span>
+            </p>
+            <p><i class="fa-brands fa-whatsapp"></i>
+                <span> WhatsApp: <a href="https://wa.me/59175076889">+591 75076889</a></span>
+            </p>
+        </div>
+    </div>
+
     <br><br>
+
+
+    <br><br>
+    <p class="text-center">
+        Copyright © | Coded with 🚀 by Ludwing Armijo
+    </p>
 </div>

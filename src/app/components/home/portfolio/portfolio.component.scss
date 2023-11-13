@@ -4,6 +4,10 @@ $color3: #47B5FF;
 $color4: #DFF6FF;
 $color5: #ffff;
 $color6: #ffff;
+.section {
+    min-height: 80vh; /* La sección ocupa el 100% de la altura de la pantalla */
+    
+  }
 span{
 
     font-style: normal;
