@@ -1,48 +1,55 @@
 <div class="content p-3" id="contact">
     <h2 class="text-center">Contacto</h2>
     <div class="row justify-content-center">
-        <div class="col d-flex justify-content-center">
-            <div class="card bg-danger">
-                <div class="card-body">
+        <div class="col d-flex justify-content-center" >
+            <div class="card">
+                <form class="card-body" (submit)="sendEmail()">
                     <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre Completo*</label>
-                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo">
+                        <input class="form-control" [formControl]="name" type="text" name="user_name" x placeholder="Escribe tu nombre completo">
+                        <span class="text-danger"  [hidden]="name.valid || name.pristine">
+                            El nombre es obligatorio!
+                        </span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email*</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input class="form-control" [formControl]="email" type="email" name="user_email"  placeholder="Escribe tu correo electrónico">
+                        <span class="text-danger"  *ngIf="email.errors?.['required']" [hidden]="email.valid || email.pristine">
+                            El email es obligatorio!
+                        </span>
+                        <span class="text-danger" *ngIf="email.errors?.['email']" [hidden]="email.valid || email.pristine">
+                            El email debe ser valido!
+                        </span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Mensaje*</label>
-                        <textarea class="form-control" id="exampleFormControlInput1" style="height: 125px;" placeholder="Escribe tu mensaje aquí"></textarea>
+                        <textarea class="form-control" name="user_message" style="height: 100px;" placeholder="Escribe tu mensaje aquí"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary d-grid mx-auto">Enviar mensaje</button>
-                </div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="row  text-start">
+    
+    <div class="row contact-data">
         <h4>Contactamé</h4>
-        
-        <div class="col-sm ">
-            <p >
+        <div class="col">
+            <p>
                 <i class="fa-solid fa-envelope"></i>
                 <span> Email: <a  href="">{{ currentEmailText }}</a></span>
             </p>
-            <p><i class="fa-brands fa-linkedin"></i>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
                 <span> LinkedIn: <a href="https://www.linkedin.com/in/ludwingarmijosaavedra/">in/ludwingarmijosaavedra</a></span>
             </p>
-            <p><i class="fa-brands fa-whatsapp"></i>
+            <p>
+                <i class="fa-brands fa-whatsapp"></i>
                 <span> WhatsApp: <a href="https://wa.me/59175076889">+591 75076889</a></span>
             </p>
         </div>
     </div>
 
-    <br><br>
-
-
-    <br><br>
     <p class="text-center">
         Copyright © | Coded with 🚀 by Ludwing Armijo
     </p>

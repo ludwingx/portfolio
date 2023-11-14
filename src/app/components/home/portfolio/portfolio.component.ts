@@ -15,12 +15,6 @@ export class PortfolioComponent {
       title:'AppCea',
       description:'Aplicación Movil Web desarrollada con Ionic, Angular, PHP y MySQL para el Centro de Educación Ambiental del Gobierno'+ 
       ' Autónomo Departamental de Santa Cruz',
-    },
-    { 
-      imageUrl:'./assets/photo1.jfif',
-      title:'AppCea',
-      description:'Aplicación Movil Web desarrollada con Ionic, Angular, PHP y MySQL para el Centro de Educación Ambiental del Gobierno'+ 
-      ' Autónomo Departamental de Santa Cruz',
     }
 
   ]

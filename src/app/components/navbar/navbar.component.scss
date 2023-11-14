@@ -5,15 +5,14 @@ $color4: #DFF6FF;
 $color5: #ffff;
 $color6: #ffff;
 .navbar{
-
+    backdrop-filter: blur(4px);
+    background-color: rgba(20, 20, 20, 0.2);
     top: 0;
     left: 0;
     width: 100%;
 
     padding-right: 8%;
-    :hover{
-        color: $color6 ;
-    }
+    
 }
 
 nav{

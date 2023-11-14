@@ -6,15 +6,3 @@ app-navbar {
     z-index: 1000; /* Ajusta el valor según sea necesario */
     /* Otros estilos */
   }
-  
-  /* Otros estilos para los demás componentes */
-  app-home,
-  app-aboutme,
-  app-portfolio,
-  app-education,
-  app-skills,
-  app-contact {
-    /* Asegúrate de que estos componentes tengan una posición relativa o absoluta según sea necesario */
-    position: relative; /* o absolute, dependiendo de tu diseño */
-    z-index: 1; /* Un valor menor que el de la barra de navegación */
-  }

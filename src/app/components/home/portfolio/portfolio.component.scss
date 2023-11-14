@@ -8,14 +8,9 @@ $color6: #ffff;
     min-height: 80vh; /* La sección ocupa el 100% de la altura de la pantalla */
     
   }
-span{
-
-    font-style: normal;
-    font-size: 15px;
-
-}
 .card{
     border: 1px solid $color2;
+    margin: 10px;
 
 }
 img{
@@ -31,11 +26,7 @@ img{
     border: 0.01px solid $color2;
     &:hover{
         background-color: $color2;
-        color: $color4;
+
     }
 
 }
-
-.card-container {
-    margin: 20px; /* Ajusta este valor según tus necesidades */
-  }
