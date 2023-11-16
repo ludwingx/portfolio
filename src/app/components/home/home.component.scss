@@ -1,15 +1,13 @@
+.section {
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 150px;
+}
 
 .buttons{
-    gap: 12px;
+  padding-top: 20px;
 }
 .socialm{
-  padding-top: 70px;
-}
-
-.section {
-  height: 100vh; /* La sección ocupa el 100% de la altura de la pantalla */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  padding-top: 130px;
+  padding-bottom: 20px;
 }

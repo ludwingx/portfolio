@@ -5,7 +5,7 @@ $color4: #DFF6FF;
 $color5: #ffff;
 $color6: #ffff;
 .navbar{
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     background-color: rgba(20, 20, 20, 0.2);
     top: 0;
     left: 0;
@@ -15,12 +15,16 @@ $color6: #ffff;
     
 }
 
-nav{
-    a{
-        color: white;
-    }
+
+a{
+    color: white;
+}&:hover{
+    color: #1363DF;
 }
+
 .navbar {
     overflow-x: hidden;
   }
+
+  
   

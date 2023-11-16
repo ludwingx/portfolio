@@ -6,7 +6,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  welcomeMessage = '</Hello Word>';
+  welcomeMessage = '</Hello World>';
   name = 'Ludwing';
   lastName = 'Armijo Saavedra';
   portfolioMessage = 'Este es mi portafolio como desarrollador web';
