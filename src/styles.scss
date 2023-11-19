@@ -5,14 +5,44 @@ $color4: #DFF6FF;
 $color5: #ffff;
 $color6: #0c0c0c;
 $color7: #0e0e0e;
-
+#navbar{
+    a{
+        color: white;
+        &:hover{
+            background-image: linear-gradient(to right, $color2, $color3);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent; /* Hace que el texto sea transparente */
+        }
+    }
+}
 #home {
     background-color: $color6; /* Puedes cambiar esto al color que desees */
     h1,h2,h3,h4,h5,h6{
         color: #ffffff;
+
+    }
+    h1,.nav-contact:hover{
+        background-image: linear-gradient(to right, $color2, $color3);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent; /* Hace que el texto sea transparente */
+    }
+    .nav-contact:hover{
+        color: $color5;
     }
     i:hover{
-        color: $color5;
+        color: #47B5FF;
+    }
+    .btn{
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent; /* Hace que el texto sea transparente */
+        &:hover{
+            background: linear-gradient(to right,$color3, $color2); /* Cambia los colores según tus preferencias */
+            color: $color5;
+            transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }         
     }
 }
 #aboutme{
@@ -27,7 +57,6 @@ $color7: #0e0e0e;
         background-clip: text; 
         color: transparent; /* Hace que el texto sea transparente */
     }
-    
     background-color: $color7; /* Puedes cambiar esto al color que desees */
 }
 #portfolio{
@@ -47,7 +76,6 @@ $color7: #0e0e0e;
             transform: scale(1.01);
         }
         .btn{
-
             span,i{
                 background-image: linear-gradient(to right, $color2, $color3);
                 -webkit-background-clip: text; 
@@ -59,9 +87,7 @@ $color7: #0e0e0e;
                     color: $color5;
                 }
                 background: linear-gradient(to right,$color3, $color2); /* Cambia los colores según tus preferencias */
-
-                transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-                
+                transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;  
             }
         }
     }
@@ -83,7 +109,6 @@ $color7: #0e0e0e;
         background-clip: text; 
         color: transparent; /* Hace que el texto sea transparente */
     }
-    
     .title{
         padding-bottom: 30px;
     }
@@ -182,5 +207,4 @@ $color7: #0e0e0e;
         background-clip: text; 
         color: transparent; /* Hace que el texto sea transparente */
     }
-    
 }

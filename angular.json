@@ -32,9 +32,11 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
+
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 
             ]
@@ -103,6 +105,7 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [
+
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 
             ]

@@ -3,28 +3,11 @@ $color2: #1363DF;
 $color3: #47B5FF;
 $color4: #DFF6FF;
 $color5: #ffff;
-$color6: #ffff;
+$color6: #0c0c0c;
+$color7: #0e0e0e;
+
 .navbar{
-    backdrop-filter: blur(10px);
-    background-color: rgba(20, 20, 20, 0.2);
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    padding-right: 8%;
-    
+    background-color: rgba(19, 19, 19, 0.8); /* Color de fondo con opacidad */
+    backdrop-filter: blur(2px); /* Aplica el desenfoque */
+    -webkit-backdrop-filter: blur(8px); /* Aplica el desenfoque */
 }
-
-
-a{
-    color: white;
-}&:hover{
-    color: #1363DF;
-}
-
-.navbar {
-    overflow-x: hidden;
-  }
-
-  
-  

@@ -2,9 +2,13 @@ img{
     max-width: 350px;
     height: auto;
 }
-
+h2{
+    padding: 50px;
+}
 .section {
-    min-height: 60vh; /* La sección ocupa el 100% de la altura de la pantalla */
+    min-height: 100vh; /* La sección ocupa el 100% de la altura de la pantalla */
     
   }
-
+#card{
+    padding-top: 32px;
+}
