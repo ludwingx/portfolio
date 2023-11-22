@@ -1,12 +1,9 @@
 
 <div class="content p-3 section" id="portfolio" >
-
-
-    <h2 class="text-center">Portfolio</h2>
-
-    
-    <div class="row d-flex justify-content-center ">
-        <div class="col col-md-6 col-lg-auto " *ngFor="let card of cards" >
+    <h2 class="text-center" data-aos="fade-zoom-in">Portfolio</h2>
+    <div class="row d-flex justify-content-center " id="cardRow">
+        <div class="col col-md-6 col-lg-auto " *ngFor="let card of cards" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <div class="card-container d-flex justify-content-center" >
                 <div class="card" style="width:18rem">
                     <img [src]="card.imageUrl" class="card-img-top mx-auto" alt="...">

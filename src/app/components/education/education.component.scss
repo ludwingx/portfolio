@@ -3,12 +3,19 @@ img{
     height: auto;
 }
 h2{
-    padding: 50px;
+    padding-top: 20px;
+
 }
 .section {
-    min-height: 100vh; /* La sección ocupa el 100% de la altura de la pantalla */
+    min-height: 80vh; /* La sección ocupa el 100% de la altura de la pantalla */
     
   }
 #card{
-    padding-top: 32px;
+    width: 16rem;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+#cardRow{
+    padding-top: 20px;
 }

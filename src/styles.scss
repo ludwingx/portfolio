@@ -3,8 +3,8 @@ $color2: #1363DF;
 $color3: #47B5FF;
 $color4: #DFF6FF;
 $color5: #ffff;
-$color6: #0c0c0c;
-$color7: #0e0e0e;
+$color6: rgb(3, 3, 3);
+$color7: rgb(5, 5, 5);
 #navbar{
     a{
         color: white;
@@ -91,6 +91,13 @@ $color7: #0e0e0e;
             }
         }
     }
+    h2{
+        color: $color5;
+        background-image: linear-gradient(to right, $color2, $color3);
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent; /* Hace que el texto sea transparente */
+    }
 }
 #education {
     background-color: $color7; /* Puedes cambiar esto al color que desees */
@@ -147,14 +154,12 @@ $color7: #0e0e0e;
     
 }
 #contact{
-    
+
     background-color: $color7; /* Puedes cambiar esto al color que desees */
     h1,h2,h3,h4,h5,h6,p,span,label{
         color: #ffffff;
     }
-    h2{
-        padding-bottom: 20px;
-    }
+
     .card{
 
         transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -197,9 +202,7 @@ $color7: #0e0e0e;
             }
         }
     } 
-    .contact-data{
-        padding-top: 60px;
-    }
+
     h2{
         font-size: 40px;
         background-image: linear-gradient(to right, $color2, $color3);

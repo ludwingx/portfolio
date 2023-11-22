@@ -1,0 +1,47 @@
+RewriteEngine On
+
+# Redirección de tudominio.com a www.tudominio.com
+RewriteCond %{HTTP_HOST} ^localhost:4200 [NC]
+RewriteRule ^(.*)$ http://www.localhost:4200/$1 [L,R=301]
+
+# Redirección de todas las rutas de www.tudominio.com a /new-path
+RewriteCond %{HTTP_HOST} ^www.localhost:4200/ [NC]
+RewriteRule ^(.*)$ /new-path [L,R=301]
+
+
+# En angular.json en:
+"architect": {
+    "build": {
+      "builder": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/portfolio",
+        "index": "src/index.html",
+        "main": "src/main.ts",
+        "polyfills": [
+          "zone.js"
+        ],
+        "tsConfig": "tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "src/favicon.ico",
+          "src/assets"
+        ],
+        "redirects":[
+            {
+                "src":"old-path",
+                "dest":"new-path",
+                "statusCode":301
+            }
+        ],
+        "styles": [
+          "src/styles.scss",
+          "node_modules/bootstrap/scss/bootstrap.scss",
+          "node_modules/@fortawesome/fontawesome-free/css/all.css",
+          "node_modules/aos/dist/aos.css"
+        ],
+        "scripts": [
+
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+
+        ]
+      },
