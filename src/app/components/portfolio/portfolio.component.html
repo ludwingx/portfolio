@@ -9,7 +9,7 @@
                     <img [src]="card.imageUrl" class="card-img-top mx-auto" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{card.title}}</h5>
-                        <p class="card-text">{{ card.description }}</p>
+                        <p class="card-text" [innerHTML]="formatDescription(card.description)">{{ card.description }} </p>
                           <div class="d-flex justify-content-center">
                             <button class="btn btn-eyes">
                                 <i class="fa-solid fa-eye"></i>
@@ -24,7 +24,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

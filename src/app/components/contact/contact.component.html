@@ -1,26 +1,23 @@
-
 <div class="content p-3 " id="contact" >
     <br>
-<br>
-
-
+    <br>
     <h2 class="text-center" data-aos="fade-zoom-in">Contactamé</h2>
     <div class="row justify-content-center">
         <div class="col d-flex justify-content-center"  data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" >
             <div class="card">
-                <form class="card-body" (submit)="sendEmail()">
+                <form class="card-body"  [formGroup]="form" (submit)="sendEmail()">
                     <p>Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Nombre Completo*</label>
-                        <input class="form-control" [formControl]="name" type="text" name="user_name" x placeholder="Escribe tu nombre completo">
+                        <input class="form-control" formControlName="name" type="text" name="name" x placeholder="Escribe tu nombre completo">
                         <span class="text-danger"  [hidden]="name.valid || name.pristine">
                             El nombre es obligatorio!
                         </span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email*</label>
-                        <input class="form-control" [formControl]="email" type="email" name="user_email"  placeholder="Escribe tu correo electrónico">
+                        <input class="form-control" formControlName="email" type="email" name="email"  placeholder="Escribe tu correo electrónico">
                         <span class="text-danger"  *ngIf="email.errors?.['required']" [hidden]="email.valid || email.pristine">
                             El email es obligatorio!
                         </span>
@@ -30,11 +27,17 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Mensaje*</label>
-                        <textarea class="form-control" name="user_message" style="height: 100px;" placeholder="Escribe tu mensaje aquí"></textarea>
+                        <textarea class="form-control" formControlName="message" name="message" style="height: 100px;" placeholder="Escribe tu mensaje aquí"></textarea>
                     </div>
+                    <!-- <div>
+                        <p>	
+                            {{form.value | json}}
+                        </p>
+                    </div> -->
                     <button type="submit" class="btn btn-primary d-grid mx-auto">Enviar mensaje</button>
                 </form>
             </div>
+
         </div>
     </div>
     <br>
