@@ -7,7 +7,7 @@
           <div class="card" style="width:18rem">
             <img [src]="card.imageUrl" class="card-img-top mx-auto" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{card.title}}</h5>
+              <h5 class="card-title ">{{card.title}}</h5>
               <p class="card-text">
                 <span [innerHTML]="formatDescription(card.description)"></span>
               </p>
@@ -21,13 +21,21 @@
               </p>
               
               <div class="d-flex justify-content-center">
-                <button class="btn btn-eyes">
+                <button class="btn btn-eyes" *ngIf="card.siteUrl" (click)="viewSite(card)">
                   <i class="fa-solid fa-eye"></i>
                   <span>{{txteyebutton}}</span>
                 </button>
-                <button class="btn btn-github">
+                <button class="btn btn-github" *ngIf="card.codeUrl" (click)="viewCode(card)">
                   <i class="fa-brands fa-github"></i>
                   <span>{{txtgithubbutton}}</span>
+                </button>
+                <button class="btn btn-github" *ngIf="card.codeUrl2" (click)="viewCode2(card)">
+                    <i class="fa-brands fa-github"></i>
+                    <span>{{txtgithubbutton2}}</span>
+                </button>
+                <button class="btn btn-github" *ngIf="card.codeUrl3" (click)="viewCode3(card)">
+                    <i class="fa-brands fa-github"></i>
+                    <span>{{txtgithubbutton3}}</span>
                 </button>
               </div>
             </div>
