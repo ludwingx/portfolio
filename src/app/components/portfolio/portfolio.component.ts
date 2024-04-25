@@ -16,7 +16,7 @@ export class PortfolioComponent {
       imageUrl:'./assets/farmaciaSantaRosita.png',
       title:'Farmacia Santa Rosita APP',
       description:'Aplicación Web desarrollada para la gestión de inventario y ventas de la Farmacia Santa Rosita, utilizando Angular para el frontend y NodeJs con MySQL para el backend.',
-      technologies: ['Angular17', 'HTML', 'TypeScript', 'NodeJs', 'SCSS', 'MySQL', 'Bootstrap5'],
+      technologies: ['Angular17', 'HTML5', 'TypeScript', 'NodeJs', 'SCSS', 'MySQL', 'Bootstrap5'],
       codeUrl2: 'https://github.com/ludwingx/farmacia-santa-rosita-app-frontend',
       codeUrl3: 'https://github.com/ludwingx/farmacia-santa-rosita-app-backend' 
     },
@@ -33,43 +33,47 @@ export class PortfolioComponent {
       title:'AppCea',
       description:'Aplicación Movil Web desarrollada con Ionic, Angular, PHP y MySQL para el Control y seguimiento de animales silvestres rescatados del Centro de Educación Ambiental del Gobierno '+ 
       'Autónomo Departamental de Santa Cruz',
-      technologies: ['Angular17','HTML', 'TypeScript',  'SCSS', 'Ionic','PHP',, 'MySQL', 'Bootstrap5'],
+      technologies: ['Angular14','HTML5', 'TypeScript',  'SCSS', 'Ionic6','PHP',, 'MySQL', 'Bootstrap5'],
+      siteUrl: 'https://appcea.netlify.app/',
       codeUrl: 'https://github.com/ludwingx/AppCEA' 
     },
     { 
       imageUrl:'./assets/easybank.png',
       title:'EasyBank',
       description:'#RetoEasyBank de programación de una landing page, creada con Angular17 y Bootstrap5',
-      technologies: ['Angular17', 'HTML','TypeScript', 'SCSS', 'Bootstrap5'],
+      technologies: ['Angular17', 'HTML5','TypeScript', 'SCSS', 'Bootstrap5'],
+      siteUrl: 'https://6629c09daedc0a3421763ede--easybankbyludwing.netlify.app/',
       codeUrl2: 'https://github.com/ludwingx/Easybank-Challange'
     },
     { 
       imageUrl:'./assets/newHome.png',
       title:'News Homepage',
       description:'#RetoNewsHomepage de programación de una landing page, creada con Angular17 y Bootstrap5',
-      technologies: ['Angular17','HTML', 'Typescript', 'SCSS', 'Bootstrap5'],
+      technologies: ['Angular17','HTML5', 'Typescript', 'SCSS', 'Bootstrap5'],
+      siteUrl: 'https://newhomepagebyludwing.netlify.app/',
       codeUrl2: 'https://github.com/ludwingx/news-homepage'
     },
     { 
       imageUrl:'./assets/multiStepForm.png',
       title:'MultiStepForm',
       description:'#RetoMultiStepForm de programación de una landing page, creada con Angular17 y Bootstrap5',
-      technologies: ['Angular17', 'HTML','Typescript', 'SCSS', 'Bootstrap5'],
+      technologies: ['Angular17', 'HTML5','Typescript', 'SCSS', 'Bootstrap5'],
+      siteUrl: 'https://multistepformbyludwing.netlify.app/',
       codeUrl2: 'https://github.com/ludwingx/multi-step-form'
     },
     { 
       imageUrl:'./assets/alleyPlants.png',
       title:'Alley Plants',
       description:'Landing page, creada con Angular16 y Bootstrap5 para vivero de suculentas en Santa Cruz',
-      technologies: ['Angular16','HTML', 'Typescript', 'NodeJs', 'SCSS', 'MySQL', 'Bootstrap5'],
+      technologies: ['Angular16','HTML5', 'Typescript', 'NodeJs', 'SCSS', 'MySQL', 'Bootstrap5'],
       codeUrl2: 'https://github.com/ludwingx/alley-plants'
     },
     { 
       imageUrl:'./assets/portfolio.png',
       title:'Portafolio',
       description:'LadingPage creada con Angular16 y Bootstrap5, con el fin de mostrar mis proyectos realizados',
-      technologies: ['Angular16', 'HTML','Typescript', 'SCSS', 'Bootstrap5'],
-      siteUrl: 'https://6629a8630acff635f7857d53--symphonious-lily-3451a2.netlify.app/',
+      technologies: ['Angular16', 'HTML5','Typescript', 'SCSS', 'Bootstrap5'],
+      siteUrl: 'https://portfoliobyludwing.netlify.app/',
       codeUrl2: 'https://github.com/ludwingx/my-portfolio'
     }
   ]
