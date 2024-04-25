@@ -4,16 +4,16 @@
   <div class="container"   data-aos="fade-up">
     <div class="row justify-content-md-center presentation">
       <div class="col text-center">
-        <h5>{{ welcomeMessage }}</h5>
+        <h5 class="text-muted">{{ welcomeMessage }}</h5>
         <h1>{{ name }}</h1>
         <h2>{{ lastName }}</h2>
-        <h6>{{ portfolioMessage }}</h6>
+        <p class="portfolioMessage">{{ portfolioMessage }}</p>
       </div>
     </div>
 
     <div class="row justify-content-md-center buttons">
       <div class="col">
-        <button type="button" class="btn btn-primary mx-2">{{ btnCv }}</button>
+        <button type="button" class="btn btn-primary mx-2" (click)="goToCv()">{{ btnCv }}</button>
         <button type="button"   class="btn btn-primary mx-2">
           <a class="nav-contact" href="#contact">{{ btnContact }} </a>
         </button>

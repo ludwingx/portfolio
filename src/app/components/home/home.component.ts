@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +10,9 @@ export class HomeComponent {
   name = 'Ludwing';
   lastName = 'Armijo Saavedra';
   portfolioMessage = 'Este es mi portafolio como desarrollador web';
-  btnCv = 'Descargar CV';
+  btnCv = 'Ver CV';
   btnContact = 'Contactame!';
-
+  goToCv() {
+    window.open('/assets/CV_LUDWING_ARMIJO_SAAVEDRA.pdf', '_blank');
+  }
 }
